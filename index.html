@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whats App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google fonts & icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <a
+        href="https://github.com/MohammadBaratii"
+        target="__blank"
+        class="gitHub"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+
+      <div class="container__icon">
+        <i class="fas fa-comment-alt"></i>
+      </div>
+      <div class="container__pen-icon">
+        <i class="fas fa-pen"></i>
+      </div>
+      <header class="header">
+        <div class="header__logo">
+          <h1>WhatsApp</h1>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div class="header__tabs">
+          <i class="fa fa-camera"></i>
+          <button class="active">chats</button>
+          <button>status</button>
+          <button>calls</button>
+          <div class="btnBorder"></div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__chat">
+          <div class="chatBox">
+            <div class="chatBox__img">
+              <img src="./images/1.png" alt="profile picture" />
+            </div>
+            <h3 class="chatBox__name">Mohammad</h3>
+            <p class="chatBox__message">Hello world</p>
+            <p class="chatBox__time">11:34 PM</p>
+          </div>
+          <div class="chatBox">
+            <div class="chatBox__img">
+              <img src="./images/2.png" alt="profile picture" />
+            </div>
+            <h3 class="chatBox__name">Meti</h3>
+            <p class="chatBox__message">See you!</p>
+            <p class="chatBox__time">10:17 PM</p>
+          </div>
+          <div class="chatBox">
+            <div class="chatBox__img">
+              <img src="./images/3.png" alt="profile picture" />
+            </div>
+            <h3 class="chatBox__name">Hamid</h3>
+            <p class="chatBox__message">how are you</p>
+            <p class="chatBox__time">09:26 PM</p>
+          </div>
+        </div>
+        <div class="main__status">
+          <div class="statusBox">
+            <div class="statusBox__img">
+              <img src="./images/4.png" alt="profile picture" />
+            </div>
+            <h3 class="statusBox__info">My status</h3>
+            <p class="statusBox__message">Tap to add status update</p>
+            <div class="statusBox__icon">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+        <div class="main__calls">
+          <div class="callBox">
+            <div class="callBox__img">
+              <img src="./images/3.png" alt="profile picture" />
+            </div>
+            <h3 class="callBox__name">Hamid</h3>
+            <div class="callBox__arrow-icon">
+              <i class="fa fas fa-arrow-up"></i>
+            </div>
+            <p class="callBox__time">7/1/22, 6:54 PM</p>
+            <div class="callBox__phone-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+          </div>
+          <div class="callBox">
+            <div class="callBox__img">
+              <img src="./images/2.png" alt="profile picture" />
+            </div>
+            <h3 class="callBox__name">Meti</h3>
+            <div class="callBox__arrow-icon">
+              <i class="fa fas fa-arrow-up"></i>
+            </div>
+            <p class="callBox__time">12/13/21, 6:54 PM</p>
+            <div class="callBox__phone-icon">
+              <i class="fas fa-video"></i>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,317 @@
+:root {
+  --dark: #111c22;
+  --light: #a1a4ad;
+  --green: #00a884;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #999;
+}
+
+/* container */
+.container {
+  position: relative;
+  width: 19rem;
+  height: 34rem;
+  background-color: var(--dark);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #111;
+  overflow: hidden;
+}
+.container__icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: var(--green);
+  color: #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
+.container__pen-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 1rem;
+  right: 1.2rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  background-color: #202a33;
+  color: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+/* header */
+.header {
+  background-color: #202a33;
+  color: var(--light);
+  padding: 1rem 1rem;
+  padding-bottom: 0;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.header__logo h1 {
+  flex-grow: 2;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.header__logo i {
+  margin-left: 2rem;
+  color: var(--light);
+}
+.header__tabs {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.header__tabs .btnBorder {
+  position: absolute;
+  bottom: 0;
+  left: 26px;
+  width: 74px;
+  height: 2px;
+  background-color: var(--green);
+  transition: left 0.3s;
+}
+.header__tabs button {
+  padding: 0 1rem 0.6rem;
+  background-color: transparent;
+  color: var(--light);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.header__tabs button.active {
+  color: var(--green);
+}
+
+/* main */
+.main {
+  position: relative;
+  display: flex;
+  padding: 0 1rem;
+  transition: 0.3s;
+}
+.main__chat,
+.main__status,
+.main__calls {
+  position: absolute;
+  width: 17rem;
+}
+
+/* main chat */
+.chatBox {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 65% 15%;
+  grid-template-areas:
+    "img name time"
+    "img message message";
+  align-items: center;
+  padding: 0.8rem 0;
+  color: var(--light);
+}
+.chatBox::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 1px;
+  background-color: #333;
+}
+.chatBox__img {
+  grid-area: img;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.chatBox__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.3);
+}
+.chatBox__name {
+  grid-area: name;
+  color: #ececec;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.chatBox__message {
+  grid-area: message;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.chatBox__time {
+  grid-area: time;
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-align: right;
+}
+
+/* main status */
+.main__status {
+  left: 19rem;
+}
+.statusBox {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    "img name time"
+    "img message message";
+  align-items: center;
+  padding: 1rem 0;
+  color: var(--light);
+}
+.statusBox__img {
+  grid-area: img;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.statusBox__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.statusBox__info {
+  grid-area: name;
+  color: #ececec;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.statusBox__message {
+  grid-area: message;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.statusBox__icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.7rem;
+  left: 1.5rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: var(--green);
+  color: #fff;
+  border: 2px var(--dark) solid;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+.main__status--camera-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -23rem;
+  right: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--green);
+  color: #fff;
+  border-radius: 50%;
+}
+
+/* main calls */
+.main__calls {
+  left: 38rem;
+}
+.callBox {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 10% 60% 10%;
+  grid-template-areas:
+    "img name name phone"
+    "img arrow time phone";
+  align-items: center;
+  padding: 0.8rem 0;
+  color: var(--light);
+}
+.callBox__img {
+  grid-area: img;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.callBox__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.3);
+}
+.callBox__name {
+  grid-area: name;
+  color: #ececec;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.callBox__arrow-icon {
+  grid-area: arrow;
+  width: fit-content;
+  /* color: #e35868; */
+  color: #25d366;
+  transform: rotate(225deg);
+  font-size: 0.9rem;
+}
+.callBox__time {
+  grid-area: time;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.callBox__phone-icon {
+  grid-area: phone;
+}
+
+/* github logo */
+.gitHub {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 1rem;
+  left: 1rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: #111;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 3.2rem;
+  z-index: 3;
+}
+.gitHub:hover {
+  box-shadow: 0 0 20px #111;
+}
