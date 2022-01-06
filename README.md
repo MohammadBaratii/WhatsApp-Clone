@@ -1,5 +1,5 @@
 <div>
-  <img src="./Hnet-image.gif"/>
+  <img src=".images/page.gif"/>
   <h1>WhatsApp Clone</h1>
   <p>A WhatsApp clone with pure javascript.</p>
   <p>Note: Just the three tabs (Chats - Status - Calls) work.</p>
