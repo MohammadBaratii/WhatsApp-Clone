@@ -242,9 +242,9 @@ body {
   color: #fff;
   border-radius: 50%;
 }
-.statusVideo {
+/* .statusVideo {
   text-align: center;
-}
+} */
 /* main calls */
 .main__calls {
   left: 38rem;

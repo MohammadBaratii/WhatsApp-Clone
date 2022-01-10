@@ -5,14 +5,14 @@ const btnBorder = tab.querySelector(".btnBorder");
 const main = $.querySelector("main");
 const containerIcon = $.querySelector(".container__icon i");
 const containerPenIcon = $.querySelector(".container__pen-icon");
-const video = $.querySelector("video");
+// const video = $.querySelector("video");
 
 main.style.left = "0";
 
-video.onmouseover = () => {
-  const randomNumber = Math.floor(Math.random() * video.duration);
-  video.currentTime = randomNumber;
-};
+// video.onmouseover = () => {
+//   const randomNumber = Math.floor(Math.random() * video.duration);
+//   video.currentTime = randomNumber;
+// };
 
 const switchPages = (index, left, iconClassName, penIconBottom) => {
   main.style.left = `${left}rem`;
