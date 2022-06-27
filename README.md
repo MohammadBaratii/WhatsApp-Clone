@@ -3,7 +3,7 @@
   <img src="./images/page.gif" style="transform: translateX(50%)" />
     
   </div>
-  <a href="https://mohammadbaratii.github.io/WhatsApp-Clone/" target="_blank" style="display: block"
+  <a href="https://mohammadbaratii.github.io/WhatsApp-Clone/" target="_blank" style="font-size: 2rem"
     >watch online</a
   > <hr />
   <h1>WhatsApp Clone</h1>
