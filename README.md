@@ -1,11 +1,9 @@
 <div>
   <div>
-  <img src="./images/page.gif" />
-    
+    <img src="./images/page.gif" />
   </div>
-  <a href="https://mohammadbaratii.github.io/WhatsApp-Clone/" target="_blank" style: "color: red;"
-    >watch online</a
-  > <hr />
+  
+  <hr /><a href="https://mohammadbaratii.github.io/WhatsApp-Clone/" target="_blank">watch online</a><hr />
   <h1>WhatsApp Clone</h1>
   <p>A WhatsApp clone with pure javascript.</p>
   <p>Note: Just the three tabs (Chats - Status - Calls) work.</p>
